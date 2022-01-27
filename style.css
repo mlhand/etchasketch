@@ -1,0 +1,44 @@
+
+/* #container {
+    display:grid;
+    grid-template-columns:auto auto;
+}; */
+
+/* .gridsquare {
+    display:flex;
+    border:20 px solid black; */
+    /* margin:20px; */
+    /* padding:20px;
+    width: 50px;
+    height:50px; */
+    /* align-items:center; */
+    /* justify-content:center; */
+    /* flex-direction: column;
+
+}; */
+
+/* .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}; */
+
+.gridsquare {
+    border: 3px solid gray;
+    min-width: 30px;
+    min-height: 20px;
+    width:45px;
+    height:45px;
+    padding:1px;
+    margin:1px;
+    justify-content:center;
+    display: inline-block;
+  }
+
+  .hovercolor {
+    background-color:black;
+
+
+  }
