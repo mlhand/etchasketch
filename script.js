@@ -7,11 +7,9 @@ for (i=0;i<16;i++){
     for (j=1;j<=16;j++) {
         let cell = document.createElement('div');
         cell.className = 'gridsquare';
-        //cell.innerText = i + ' , ' + j;
+        cell.style.backgroundColor = 'white';
+        cell.addEventListener('mouseover',changeColor)
         row.appendChild(cell);
-
-        
-
     }
     container.appendChild(row);
 }
@@ -20,8 +18,31 @@ for (i=0;i<16;i++){
 
 generateDivs();
 
-document.querySelector('.gridsquare').addEventListener('mouseenter', function() {
-    cell.className.toggle('hovercolor');
+// document.querySelector('.gridsquare').addEventListener('mouseover', function() {
+//     cell.className.toggle('hovercolor');
+// }); //toggle class w/ color 
+
+function changeColor(e) {
+e.target.style.backgroundColor = 'black';
+
+}
+
+//btn = document.querySelector('#btn');
+btn.onclick = () => {container.innerHTML = "";
+    generateDivs();}
+//btn.onlick = () => generateDivs();
+//btn.addEventListener('mousedown',generateDivs)
+
+// if (btn.clicked == true) {
+//     generateDivs();
+// }
 
 
-}); //toggle class w/ color 
+// btn = document.querySelector('btn');
+// btn.addEventListener('mousedown',clearGrid)
+
+// function clearGrid(e) {
+
+
+
+// }
